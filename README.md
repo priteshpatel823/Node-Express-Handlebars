@@ -13,7 +13,7 @@ This Express Handlebars web app is a fun little program that updates a database 
 
 ## Screenshot
 
-![First Screenshot](./screenshots/screenshot.png)
+![First Screenshot](./screenshots/screenshots.png)
 
 ## License
 
