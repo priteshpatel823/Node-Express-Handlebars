@@ -1,0 +1,51 @@
+<div class="title">
+    <h1>Ready to Eat A Burger?</h1>
+</div>
+
+<div class="column-contain">
+    <div class="column-contain">
+        <ul>
+            <h2>Fresh Burgers:</h2>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+                {{burger_name}}
+                <button class="change-devour" data-id="{{id}}">
+                    Devour It!
+                </button>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <img src="/assets/images/burgerDrawing.png" alt="Cheeseburger" class="burger-drawing">
+
+    <div class="column-contain">
+        <ul>
+            <h2>Eaten Burgers:</h2>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+                {{burger_name}}
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+
+<div class="column-contain">
+    <div class="column">
+        <form class="create-form">
+            <h2>Add New Burger:</h2>
+            <div class="form-group">
+                <label for="bu"></label>
+                <input type="text" id="bu" name="name">
+            </div>
+            <br>
+            <button type="submit">Add Burger</button>
+        </form>
+    </div>
+</div>
